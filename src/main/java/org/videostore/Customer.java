@@ -23,7 +23,7 @@ public class Customer {
 		int frequentRenterPoints = 0;
 		String result = "Rental Record for " + getName() + "\n";
 		for (Rental rental : rentals) {
-			frequentRenterPoints += getFrequentRenterPoints(rental);
+			frequentRenterPoints += rental.getFrequentRenterPoints();
 			//show figures for this rental
 			result += "\t" + rental.getMovie().getTitle()+ "\t"
 					+ String.valueOf(rental.getCharge()) + "\n";
@@ -34,9 +34,5 @@ public class Customer {
 		result += "You earned " + String.valueOf(frequentRenterPoints)
 		+ " frequent renter points";
 		return result;
-	}
-	
-	private int getFrequentRenterPoints (Rental rental) {
-		return rental.getFrequentRenterPoints();
 	}
 }
