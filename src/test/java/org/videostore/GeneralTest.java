@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-public class GeneralIT {
+public class GeneralTest {
 
 	private Customer customer1;
 	private Customer customer2;
