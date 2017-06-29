@@ -1,4 +1,4 @@
-This is an example of basic refactoring steps to achive a higher cohesion supported by tests.
+This is an example of basic refactoring steps to achive a higher cohesion supported by tests. The example is inspired by Martin Fowler's  book: Refactoring.
 The refactoring steps coincide with each commit.
 
 Requirements:
