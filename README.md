@@ -2,11 +2,18 @@ This is an example of basic refactoring steps to achive a higher cohesion suppor
 The refactoring steps coincide with each commit.
 
 Requirements:
- - Maven
+ - Maven 3.5
  - JDK 1.8
+ or
+ - Docker 17.0+ (Run 'docker build -t videostore_refactoring .' on the project root folder.)
 
-To execute the tests:  
-Run 'mvn clean compile test' on the project root folder.
+To execute the tests, on the project root folder, run:  
+'mvn clean compile test'
+Or if you have Docker:
+'docker run videostore_refactoring mvn clean compile test'
 
-To execute the App.java:  
-Run 'mvn clean compile exec:java' on the project root folder.
+
+To execute the App.java, on the project root folder, run:  
+'mvn clean compile exec:java'
+Or if you have Docker:
+'docker run videostore_refactoring mvn clean compile exec:java'
