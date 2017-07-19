@@ -6,6 +6,8 @@ Requirements:
  - JDK 1.8  
  or  
  - Docker 17.0+ (Run 'docker build -t videostore_refactoring .' on the project root folder.)  
+The docker registry hub has a Maven image that can be used to create java containers.  
+Using this approach the build machine does not need to have either Java or Maven pre-installed, Docker controls the entire build process.  
 
 To execute the tests, on the project root folder, run:  
 'mvn clean compile test'  
